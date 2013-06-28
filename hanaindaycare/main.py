@@ -8,28 +8,28 @@ template_dir = os.path.join(os.path.dirname(__file__), 'template')
 
 jinja2_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), autoescape = True)
 
-def render_template(template_path):
-    return jinja2_env.get_template(template_path).render()
+def render_template(template_name):
+    return jinja2_env.get_template(template_name + '.html').render(nav=template_name)
 
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.out.write(render_template('home.html'))
+        self.response.out.write(render_template('home'))
 
 class InfoHandler(webapp2.RequestHandler):
 	def get(self):
-		self.response.out.write(render_template('info.html'))
+		self.response.out.write(render_template('info'))
 
 class AdmissionHandler(webapp2.RequestHandler):
 	def get(self):
-		self.response.out.write(render_template('admission.html'))
+		self.response.out.write(render_template('admission'))
 
 class GuideHandler(webapp2.RequestHandler):
 	def get(self):
-		self.response.out.write(render_template('guide.html'))
+		self.response.out.write(render_template('guide'))
 
 class MapHandler(webapp2.RequestHandler):
 	def get(self):
-		self.response.out.write(render_template('map.html'))
+		self.response.out.write(render_template('map'))
 
 app = webapp2.WSGIApplication([
     ('/', HomeHandler),
