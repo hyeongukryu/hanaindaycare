@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible', content='IE=edge,chrome=1" />
-    <meta name="author" content="류형욱" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible', content='IE=edge,chrome=1" />
+  <meta name="author" content="류형욱" />
 
-    <title>{% block title %}{% endblock %} · 하나인장애인주간보호센터</title>
+  <title>{% block title %}{% endblock %} · 하나인장애인주간보호센터</title>
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
-    <link href="/static/stylesheets/global.css" rel="stylesheet" />
-    <link href="/static/stylesheets/layout.css" rel="stylesheet" />
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
+  <link href="/static/stylesheets/global.css" rel="stylesheet" />
+  <link href="/static/stylesheets/layout.css" rel="stylesheet" />
 
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  {% block head %}{% endblock %}
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
-      ga('create', 'UA-42075698-1', 'hanaindaycare.appspot.com');
-      ga('send', 'pageview');
-    </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42075698-1', 'hanaindaycare.appspot.com');
+    ga('send', 'pageview');
+  </script>
 </head>
 <body>
 
-<!-- 좌측 상단 로고 -->
-
-<!-- gnb -->
-<ul>
-    <li {% if nav == 'home' %}class="active"{% endif %}><a href="/">홈</a></li>
-    <li {% if nav == 'info' %}class="active"{% endif %}><a href="/info">기관 소개</a></li>
-    <li {% if nav == 'admission' %}class="active"{% endif %}><a href="/admission">시설 입소 안내</a></li>
-    <li {% if nav == 'guide' %}class="active"{% endif %}><a href="/guide">이용 안내</a></li>
-    <li {% if nav == 'map' %}class="active"{% endif %}><a href="/map">오시는 길</a></li>
-</ul>
-
-
-
-<!-- content -->
-{% block content %}{% endblock %}
-
-<address>
-<!-- 우측 하단 하나인 -->
-하나인장애인주간보호센터
-</address>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand">
+        <div class="logo">하나인장애인주간보호센터: 장애인의 성공적 재활, 지역 사회와의 나눔과 동행</div>
+      </a>
+      <ul class="nav pull-right">
+        <li {% if nav == 'home' %}class="active"{% endif %}><a href="/">홈</a></li>
+        <li {% if nav == 'info' %}class="active"{% endif %}><a href="/info">기관 소개</a></li>
+        <li {% if nav == 'admission' %}class="active"{% endif %}><a href="/admission">시설 입소 안내</a></li>
+        <li {% if nav == 'guide' %}class="active"{% endif %}><a href="/guide">이용 안내</a></li>
+        <li {% if nav == 'map' %}class="active"{% endif %}><a href="/map">오시는 길</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container" id="content">
+  {% block content %}{% endblock %}
+</div>
+<div class="container">
+  <hr />
+  <footer>
+    <address>
+      하나인의료생활협동조합 하나인장애인주간보호센터
+      431-086 서울시 광진구 능동로59길 14
+      전화: 070-7727-2858, 팩스: 02-498-0123
+      hanain2010@hanmail.net
+    </address>
+  </footer>
+</div>
 
 </body>
 </html>

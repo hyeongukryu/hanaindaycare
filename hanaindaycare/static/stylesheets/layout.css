@@ -1,0 +1,40 @@
+
+@media (min-width: 980px)
+{
+	#content {
+		margin-top:128px;
+	}	
+}
+
+footer {
+	left:50%;
+	position:absolute;
+	margin-top: 72px;
+	margin-left:-256px;
+	width:512px;
+	height:64px;
+}
+
+address {
+	width:512px;
+	height:0px;
+	margin:0;
+	padding:64px 0 0 0;
+	background: url(/static/images/address.png);
+	overflow:hidden;
+}
+
+.logo
+{
+	width:300px;
+	height:0px;
+	margin:8px;
+	padding: 55px 0 0 0;
+	background: url(/static/images/logo.png);
+	overflow: hidden
+}
+
+.nav
+{
+	top:30px;
+}

@@ -1,0 +1,21 @@
+
+.hero-unit
+{
+	background: url(/static/images/hero.png);
+	height:283px;
+	padding:0;
+	color:#FFF;
+	font-weight:bold;
+	text-shadow:1.5px 1.5px 10px #000;
+}
+
+.hero-unit .hero-text
+{
+	float:right;
+	padding-right:3em;
+	padding-top:8em;
+}
+
+.hero-unit .hero-text h1{font-size:2.4em}
+.hero-unit .hero-text p{margin-top:0.6em;font-size:1.4em;}
+
