@@ -11,6 +11,8 @@ jinja2_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), 
 def render_template(template_name):
     return jinja2_env.get_template(template_name + '.html').render(nav=template_name)
 
+
+
 class HomeHandler(webapp2.RequestHandler):
     def get(self):
         self.response.out.write(render_template('home'))
@@ -30,6 +32,8 @@ class GuideHandler(webapp2.RequestHandler):
 class MapHandler(webapp2.RequestHandler):
 	def get(self):
 		self.response.out.write(render_template('map'))
+
+
 
 app = webapp2.WSGIApplication([
     ('/', HomeHandler),
