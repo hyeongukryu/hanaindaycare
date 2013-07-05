@@ -29,6 +29,10 @@ class GuideHandler(webapp2.RequestHandler):
 	def get(self):
 		self.response.out.write(render_template('guide'))
 
+class SponsorsHandler(webapp2.RequestHandler):
+	def get(self):
+		self.response.out.write(render_template('sponsors'))
+
 class MapHandler(webapp2.RequestHandler):
 	def get(self):
 		self.response.out.write(render_template('map'))
@@ -40,5 +44,6 @@ app = webapp2.WSGIApplication([
     ('/info', InfoHandler),
     ('/admission', AdmissionHandler),
     ('/guide', GuideHandler),
+    ('/sponsors', SponsorsHandler),
     ('/map', MapHandler)
 ], debug=True)
