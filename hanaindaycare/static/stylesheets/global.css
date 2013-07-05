@@ -1,3 +1,15 @@
 *, button, input, textarea, pre, span, p, .btn {
 	font-family:'Malgun Gothic','NanumGothic','Dotum',sans-serif;
 }
+
+body {
+	background-color:#F8F8F6;
+}
+
+h1 {
+	color:#F39D00;
+}
+
+.page-header small {
+	color:#5EA300;
+}

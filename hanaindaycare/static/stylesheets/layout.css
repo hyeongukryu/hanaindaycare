@@ -2,8 +2,18 @@
 @media (min-width: 980px)
 {
 	#content {
-		margin-top:128px;
-	}	
+		padding-top:128px;
+	}
+}
+
+.strip
+{
+	width: 100%;
+	background: url(/static/images/strip.png);
+	background-size: 100% 4px;
+	background-repeat: no-repeat;
+	background-position: cetner top;
+	padding-top: 4px;
 }
 
 footer {
@@ -12,7 +22,6 @@ footer {
 	margin-top: 72px;
 	margin-left:-256px;
 	width:512px;
-	height:64px;
 }
 
 address {
@@ -22,10 +31,10 @@ address {
 	padding:64px 0 0 0;
 	background: url(/static/images/address.png);
 	overflow:hidden;
+	margin-bottom: 48px;
 }
 
-.logo
-{
+.logo {
 	width:300px;
 	height:0px;
 	margin:8px;
@@ -34,7 +43,22 @@ address {
 	overflow: hidden
 }
 
-.nav
-{
-	top:30px;
+.nav {
+	padding-top: 30px;
 }
+
+/*
+.nav>li {
+	height:40px;
+	padding: 0;
+}
+
+.nav>li>a {
+	height:0;
+	padding: 40px 0 0 0 !important;
+	overflow: hidden;
+}
+
+.nav-home{width:100px; background: url(/static/images/logo.png);}
+.active>.nav-home{background: url(/static/images/logo.png);}
+*/

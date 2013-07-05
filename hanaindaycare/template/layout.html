@@ -12,6 +12,7 @@
   <link href="/static/stylesheets/global.css" rel="stylesheet" />
   <link href="/static/stylesheets/layout.css" rel="stylesheet" />
 
+
   {% block head %}{% endblock %}
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -40,16 +41,17 @@
         <div class="logo">하나인장애인주간보호센터: 장애인의 성공적 재활, 지역 사회와의 나눔과 동행</div>
       </a>
       <ul class="nav pull-right">
-        <li {% if nav == 'home' %}class="active"{% endif %}><a href="/">홈</a></li>
-        <li {% if nav == 'info' %}class="active"{% endif %}><a href="/info">시설 소개</a></li>
-        <li {% if nav == 'admission' %}class="active"{% endif %}><a href="/admission">입소 안내</a></li>
-        <li {% if nav == 'guide' %}class="active"{% endif %}><a href="/guide">이용 안내</a></li>
-        <li {% if nav == 'sponsors' %}class="active"{% endif %}><a href="/sponsors">후원</a></li>
-        <li {% if nav == 'volunteers' %}class="active"{% endif %}><a href="/volunteers">자원봉사</a></li>
-        <li {% if nav == 'map' %}class="active"{% endif %}><a href="/map">오시는 길</a></li>
+        <li {% if nav == 'home' %}class="active"{% endif %}><a href="/" class="nav-home">홈</a></li>
+        <li {% if nav == 'info' %}class="active"{% endif %}><a href="/info" class="nav-info">기관 소개</a></li>
+        <li {% if nav == 'admission' %}class="active"{% endif %}><a href="/admission" class="nav-admission">입소 안내</a></li>
+        <li {% if nav == 'guide' %}class="active"{% endif %}><a href="/guide" class="nav-guide">시설 소개</a></li>
+        <li {% if nav == 'sponsors' %}class="active"{% endif %}><a href="/sponsors" class="nav-sponsors">후원</a></li>
+        <li {% if nav == 'volunteers' %}class="active"{% endif %}><a href="/volunteers" class="nav-volunteers">자원봉사</a></li>
+        <li {% if nav == 'map' %}class="active"{% endif %}><a href="/map" class="nav-map">오시는 길</a></li>
       </ul>
     </div>
   </div>
+  <div class="strip"></div>
 </div>
 <div class="container" id="content">
   {% block content %}{% endblock %}
@@ -65,6 +67,5 @@
     </address>
   </footer>
 </div>
-
 </body>
 </html>

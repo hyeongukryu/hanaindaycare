@@ -1,6 +1,60 @@
 {% extends "layout.html" %}
 {% block title %}기관 소개{% endblock %}
 
+{% block head %}
+<link href="/static/stylesheets/info.css" rel="stylesheet" />
+{% endblock %}
+
 {% block content %}
-기관 소개
+<div class="page-header">
+	<h1>기관 소개</h1>
+</div>
+
+<div class="vision">
+	<h2>비전</h2>
+	<p class="well well-vision">장애인의 성공적 재활과 지역 사회와의 나눔과 동행</p>
+</div>
+
+<div class="row">
+	<div class="span3">
+		<h3>미션</h3>
+		<ol>
+			<li>인간 중심의 창의적 서비스 구축</li>
+			<li>지역 사회 밀착형 인간관계 형성</li>
+			<li>행복한 자립을 위한 지원</li>
+		</ol>
+	</div>
+
+	<div class="span3">
+		<h3>운영방향</h3>
+		<ol>
+			<li>장애인이 편안하고 안전하게 보호받는 기관</li>
+			<li>장애인의 경제적 자립 기반을 조성하는 기관</li>
+			<li>장애인이 행복한 삶을 위한 기초적 기능을 습득하는 기관</li>
+			<li>지역 사회와 함께 하는 기관</li>
+		</ol>
+	</div>
+
+	<div class="span3">
+		<h3>중장기 목표</h3>
+		<ol>
+			<li>이용자의 인격 신장과 존엄성 구축</li>
+			<li>이용자 중심의 맞춤형 서비스 개발</li>
+			<li>지역 사회와의 협력적 관계 형성 및 지원 체계 구축</li>
+			<li>이용자의 사회적 자립과 잠재 능력 개발을 위한 직업적 서비스 개발</li>
+			<li>사회복지시설의 경영윤리 확립과 직원의 자기 개발 함양</li>
+		</ol>
+	</div>
+
+	<div class="span3">
+		<h3>향후 서비스 방향</h3>
+		<ol>
+			<li>공동보호작업장</li>
+			<li>단기보호</li>
+			<li>그룹홈</li>
+			<li>생활시설</li>
+		</ol>
+	</div>
+</div>
+
 {% endblock %}

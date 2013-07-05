@@ -1,0 +1,14 @@
+.well-vision {
+	text-align: center;
+	font-size:1.4em;
+	width:30em;
+	left:50%;
+	position: relative;
+	margin-left:-15em;
+	background-color: #DFDFDD;
+	color: #A66842;
+}
+
+.vision {
+	text-align: center;
+}
