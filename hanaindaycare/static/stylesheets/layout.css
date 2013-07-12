@@ -34,6 +34,12 @@ address {
 	margin-bottom: 48px;
 }
 
+.brand
+{
+	padding-left:0 !important;
+	padding-right:0 !important;
+}
+
 .logo {
 	width:300px;
 	height:0px;
@@ -43,16 +49,16 @@ address {
 	overflow: hidden
 }
 
-.nav {
+.gnb {
 	padding-top: 30px;
 }
 
-.nav>li {
+.gnb>li {
 	height:40px;
 	padding: 0;
 }
 
-.nav>li>a {
+.gnb>li>a {
 	height:0;
 	padding: 40px 0 0 0 !important;
 	overflow: hidden;

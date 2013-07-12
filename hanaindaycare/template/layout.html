@@ -12,7 +12,6 @@
   <link href="/static/stylesheets/global.css" rel="stylesheet" />
   <link href="/static/stylesheets/layout.css" rel="stylesheet" />
 
-
   {% block head %}{% endblock %}
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -40,7 +39,7 @@
       <a class="brand">
         <div class="logo">하나인장애인주간보호센터: 장애인의 성공적 재활, 지역 사회와의 나눔과 동행</div>
       </a>
-      <ul class="nav pull-right">
+      <ul class="nav gnb pull-right">
         <li {% if nav == 'home' %}class="active"{% endif %}><a href="/" class="nav-home">홈</a></li>
         <li {% if nav == 'info' %}class="active"{% endif %}><a href="/info" class="nav-info">기관 소개</a></li>
         <li {% if nav == 'admission' %}class="active"{% endif %}><a href="/admission" class="nav-admission">입소 안내</a></li>
