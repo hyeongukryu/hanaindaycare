@@ -27,6 +27,22 @@
     <div class="home-button home-button-guide">
       <a href="/guide">시설 소개</a>
     </div>
+    <div class="simpleSlide-window" rel="1">
+        <div class="simpleSlide-tray" rel="1">
+            <div class="simpleSlide-slide" rel="1">
+              <img src="/static/images/home0.png" />
+            </div>
+            <div class="simpleSlide-slide" rel="1">
+              <img src="/static/images/home1.png" />
+            </div>
+            <div class="simpleSlide-slide" rel="1">
+              <img src="/static/images/home2.png" />
+            </div>
+            <div class="simpleSlide-slide" rel="1">
+              <img src="/static/images/home3.png" />
+            </div>
+        </div>
+    </div>
   </div>
   <div class="home-right">
     <div class="home-button home-button-sponsors">
@@ -40,5 +56,12 @@
     </div>
   </div>
 </div>
+
+<script src="/static/lib/jquery.simpleSlide_min.js"></script>
+<script>
+$(document).ready( function() {
+  simpleSlide();
+});
+</script>
 
 {% endblock %}

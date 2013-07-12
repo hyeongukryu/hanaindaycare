@@ -23,7 +23,7 @@ h1{margin:0;padding:0;}
 	text-align: left;
 	background: url(/static/images/home.png) no-repeat;
 	margin:0;padding:0;
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 }
 .home-button>a{position:absolute;height:0;overflow:hidden;}
 
@@ -33,7 +33,7 @@ h1{margin:0;padding:0;}
 .home-button-cafe{width:221px;height:120px;background-position: -21px -189px;}
 .home-button-cafe>a{width:221px;padding:120px 0 0 0;}
 
-.home-button-guide{width:449px;height:72px;background-position: -255px -18px;}
+.home-button-guide{width:449px;height:72px;background-position: -255px -18px;margin-bottom: 5px;}
 .home-button-guide>a{width:449px;padding:72px 0 0 0;}
 
 .home-button-sponsors{width:222px;height:106px;background-position: -714px -15px;}
@@ -44,3 +44,5 @@ h1{margin:0;padding:0;}
 
 .home-button-map{width:222px;height:49px;background-position: -714px -255px;}
 .home-button-map>a{width:222px;padding:49px 0 0 0;}
+
+.blueberry{width:450px;}
