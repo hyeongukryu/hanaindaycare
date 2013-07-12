@@ -47,7 +47,6 @@ address {
 	padding-top: 30px;
 }
 
-/*
 .nav>li {
 	height:40px;
 	padding: 0;
@@ -59,6 +58,23 @@ address {
 	overflow: hidden;
 }
 
-.nav-home{width:100px; background: url(/static/images/logo.png);}
-.active>.nav-home{background: url(/static/images/logo.png);}
-*/
+.nav-home{width:54px; background: url(/static/images/nav.png); background-position:0px 0;}
+.active>.nav-home{background: url(/static/images/nav_active.png); background-position:0px 0;}
+
+.nav-info{width:106px; background: url(/static/images/nav.png); background-position:-54px 0;}
+.active>.nav-info{background: url(/static/images/nav_active.png); background-position:-54px 0;}
+
+.nav-admission{width:103px; background: url(/static/images/nav.png); background-position:-160px 0;}
+.active>.nav-admission{background: url(/static/images/nav_active.png); background-position:-160px 0;}
+
+.nav-guide{width:105px; background: url(/static/images/nav.png); background-position:-263px 0;}
+.active>.nav-guide{background: url(/static/images/nav_active.png); background-position:-263px 0;}
+
+.nav-sponsors{width:61px; background: url(/static/images/nav.png); background-position:-368px 0;}
+.active>.nav-sponsors{background: url(/static/images/nav_active.png); background-position:-368px 0;}
+
+.nav-volunteers{width:99px; background: url(/static/images/nav.png); background-position:-429px 0;}
+.active>.nav-volunteers{background: url(/static/images/nav_active.png); background-position:-429px 0;}
+
+.nav-map{width:112px; background: url(/static/images/nav.png); background-position:-528px 0;}
+.active>.nav-map{background: url(/static/images/nav_active.png); background-position:-528px 0;}
