@@ -1,6 +1,10 @@
 {% extends "layout.html" %}
 {% block title %}후원{% endblock %}
 
+{% block head %}
+<link href="/static/stylesheets/sponsors.css" rel="stylesheet" />
+{% endblock %}
+
 {% block content %}
 <div class="page-header">
   <h1>후원 <small>희망의 후원에 동참해 주세요</small></h1>
@@ -12,9 +16,29 @@
 </ul>
 
 <div class="tab-content">
-  <div class="tab-pane active" id="sponsors-info">
+  <div class="tab-pane active sponsors" id="sponsors-info">
+    <img src="/static/images/sponsors-info.png" />
+    <p>
+      장애인, 그리고 지역 사회와 함께하는 행복한 동행.
+      하나인장애인주간보호센터는 이용자의 일상 생활을 돕고
+      사회에 참여할 수 있도록 하는
+      생활 밀착형 장애인 지원 시설입니다.
+      가족이 마음 놓고 사회 생활을 할 수 있게 하며
+      지역 사회에 활기를 불어 넣는
+      사회 밀착형 장애인 지원 시설입니다.
+      장애인의 삶의 질 향상을 위한 노력에 동참해 주실
+      후원자 당신을 기다립니다. 
+    </p>
+    <hr />
+    <img src="/static/images/sponsors-info2.png" />
+    <p>후원 안내 : 교육 프로그램과 시설 향상을 위해 사용할 소중한 기부금</p>
+    <p>후원 방법 : 하나인장애인주간보호센터로 문의해 주십시오.</p>
   </div>
-  <div class="tab-pane" id="sponsors-list">
+  <div class="tab-pane sponsors" id="sponsors-list">
+    <img src="/static/images/sponsors-list.png" />
+    <p>
+      후원자 명단은 준비 중입니다. 하나인장애인주간보호센터는 여러분의 익명 또는 기명 후원을 기다립니다.
+    </p>
   </div>
 </div>
 

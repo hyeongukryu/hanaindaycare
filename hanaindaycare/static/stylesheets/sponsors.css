@@ -1,0 +1,17 @@
+
+.sponsors {
+	text-align:center;
+}
+
+.sponsors p {
+	height:0;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.sponsors img {
+	margin:0;
+	padding:0;
+	display:inline-block;
+}
