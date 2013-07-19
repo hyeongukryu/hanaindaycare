@@ -1,9 +1,23 @@
 {% extends "layout.html" %}
 {% block title %}자원봉사{% endblock %}
 
+{% block head %}
+<link href="/static/stylesheets/volunteers.css" rel="stylesheet" />
+{% endblock %}
+
 {% block content %}
 <div class="page-header">
 	<h1>자원봉사 <small>작은 도움, 그리고 큰 행복!</small></h1>
 </div>
-
+<div class="volunteers-info">
+	<img src="/static/images/volunteers-info.png" />
+	<p>
+		이웃을 위한 소중한 땀방울, 그리고 더 큰 즐거움!
+		하나인 자원봉사.
+		오직 하나인장애인주간보호센터에서만 얻을 수 있는 특별한 경험!
+		여러분의 재능을 마음껏 발휘하고, 멋진 추억도 만들어 보세요.
+		하나인장애인주간보호센터는 기관과 봉사자의 요구를 모두 충족할 수 있는 다양한 봉사활동 프로그램을 운영하고 있습니다. 공식 프로그램 이외에도 개인과 단체 봉사을 상시 모집하고 있습니다.
+		하나인장애인주간보호센터는 2013년 현재 한양대학교 지정 사회봉사 기관입니다.
+	</p>
+</div>
 {% endblock %}

@@ -2,8 +2,7 @@
 	padding-top:110px;
 }
 
-.strip
-{
+.strip {
 	width: 100%;
 	background: url(/static/images/strip.png);
 	background-size: 100% 4px;
@@ -29,8 +28,7 @@ address {
 	margin-bottom: 48px;
 }
 
-.brand
-{
+.brand {
 	padding-left:0 !important;
 	padding-right:0 !important;
 }

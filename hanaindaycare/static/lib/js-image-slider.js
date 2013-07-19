@@ -13,7 +13,7 @@ var sliderOptions=
 	captionEffect: "fade",
 	thumbnailsWrapperId: "thumbs",
 	m: false,
-	license: "Copyright 류형욱"
+	license: "basic"
 };
 
 var imageSlider=new mcImgSlider(sliderOptions);
