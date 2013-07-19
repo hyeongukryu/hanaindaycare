@@ -3,6 +3,9 @@
 
 {% block head %}
 <link href="/static/stylesheets/home.css" rel="stylesheet" />
+<link href="/static/lib/js-image-slider.css" rel="stylesheet" />
+<script src="/static/lib/js-image-slider.js"></script>
+
 {% endblock %}
 
 {% block content %}
@@ -27,21 +30,11 @@
     <div class="home-button home-button-guide">
       <a href="/guide">시설 소개</a>
     </div>
-    <div class="simpleSlide-window" rel="1">
-        <div class="simpleSlide-tray" rel="1">
-            <div class="simpleSlide-slide" rel="1">
-              <img src="/static/images/home0.png" />
-            </div>
-            <div class="simpleSlide-slide" rel="1">
-              <img src="/static/images/home1.png" />
-            </div>
-            <div class="simpleSlide-slide" rel="1">
-              <img src="/static/images/home2.png" />
-            </div>
-            <div class="simpleSlide-slide" rel="1">
-              <img src="/static/images/home3.png" />
-            </div>
-        </div>
+    <div id="slider">
+      <img src="/static/images/home0.png" />
+      <img src="/static/images/home1.png" />
+      <img src="/static/images/home2.png" />
+      <img src="/static/images/home3.png" />
     </div>
   </div>
   <div class="home-right">
@@ -56,12 +49,5 @@
     </div>
   </div>
 </div>
-
-<script src="/static/lib/jquery.simpleSlide_min.js"></script>
-<script>
-$(document).ready( function() {
-  simpleSlide();
-});
-</script>
 
 {% endblock %}

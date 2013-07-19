@@ -1,9 +1,5 @@
-
-@media (min-width: 980px)
-{
-	#content {
-		padding-top:110px;
-	}
+#content {
+	padding-top:110px;
 }
 
 .strip
@@ -11,8 +7,7 @@
 	width: 100%;
 	background: url(/static/images/strip.png);
 	background-size: 100% 4px;
-	background-repeat: no-repeat;
-	background-position: cetner top;
+	background-repeat: repeat-x;
 	padding-top: 4px;
 }
 
