@@ -1,4 +1,6 @@
 .hero-unit {
+	margin-top:30px;
+	margin-bottom:45px;
 	background: url(/static/images/hero.png);
 	background-position:right top;
 	height:283px;padding:0;

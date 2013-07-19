@@ -1,8 +1,40 @@
 {% extends "layout.html" %}
 {% block title %}시설 소개{% endblock %}
 
+{% block head %}
+<link href="/static/stylesheets/guide.css" rel="stylesheet" />
+{% endblock %}
+
 {% block content %}
 <div class="page-header">
-	<h1>시설 소개</h1>
+	<h1>시설 소개 <small>일상 생활 적응을 위한 최적의 시설</small></h1>
 </div>
+
+<div>
+	<h2>전경</h2>
+	<div class="row">
+		<div class="span3"><img src="/static/images/ext0.jpg" /></div>
+		<div class="span3"><img src="/static/images/ext1.jpg" /></div>
+		<div class="span3"><img src="/static/images/ext2.jpg" /></div>
+		<div class="span3"><img src="/static/images/ext3.jpg" /></div>
+	</div>
+	<h2>주 교육장</h2>
+	<div class="row">
+		<div class="span6"><img src="/static/images/main0.jpg" /></div>
+		<div class="span6"><img src="/static/images/main1.jpg" /></div>
+	</div>
+	<h2>보조 교육장</h2>
+	<div class="row">
+		<div class="span3"><img src="/static/images/sub0.jpg" /></div>
+		<div class="span3"><img src="/static/images/sub1.jpg" /></div>
+		<div class="span3"><img src="/static/images/sub2.jpg" /></div>
+		<div class="span3"><img src="/static/images/sub3.jpg" /></div>
+	</div>
+	<h2>사무 공간</h2>
+	<div class="row">
+		<div class="span6"><img src="/static/images/office0.jpg" /></div>
+		<div class="span6"><img src="/static/images/table0.jpg" /></div>
+	</div>
+</div>
+
 {% endblock %}
