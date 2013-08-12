@@ -14,12 +14,12 @@ footer {
 	left:50%;
 	position:absolute;
 	margin-top: 72px;
-	margin-left:-256px;
-	width:512px;
+	margin-left:-280px;
+	width:560px;
 }
 
 address {
-	width:512px;
+	width:560px;
 	height:0px;
 	margin:0;
 	padding:64px 0 0 0;
